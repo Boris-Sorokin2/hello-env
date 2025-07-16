@@ -12,3 +12,5 @@ To run the application inside a container, use the following command:
 ```
 sh
 docker run --rm hello-env:latest
+
+This ensures the application runs in a clean environment.
