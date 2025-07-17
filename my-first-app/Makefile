@@ -12,3 +12,8 @@ build:
 	@echo "Building Docker image: $(IMAGE_NAME):$(IMAGE_TAG)..."
 	@docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
 	@echo "Build complete. Image: $(IMAGE_NAME):$(IMAGE_TAG)"
+
+setup:
+	@echo "Setting up environment..."
+	@python3 -m venv venv
+	@venv/bin/pip install -r requirements.txt
